@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
+body {
+  background: #fbf0dd;
+  margin: 0;
+  font-family: "Jost";
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 1.5em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5em;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile_menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2em 2em;
+}
+
+nav.menu_btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 45%;
+  right: 0;
+  top: 0;
+  background: gray;
+  height: 100vh;
+  padding: 1em;
+  color: white;
+}
+nav ul.primary_nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile_menu_exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 95%;
+  margin-top: 0em;
+  position: relative;
+  padding: 0.75em;
+  border-radius: 2em;
+}
+
+h1 {
+  margin-top: 0.1em;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.right_col .description {
+  list-style: none;
+}
+.right_col .description li {
+  font-size: 1.4em;
+  text-align: center;
+  padding-right: 0.75em;
+}
+.right_col .description li a {
+  text-decoration: none;
+  padding-bottom: 1em;
+}
+.right_col .description li span {
+  margin-top: 8em;
+  color: black;
+}
+
+.left_col .description_text {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  font-size: 1.4em;
+  color: black;
+}
+
+.contact_section {
+  background: rgb(255, 213, 213);
+  padding: 0.1em 1em 1em 1em;
+}
+.contact_section label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.contact_section input, .contact_section textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+.contact_section .send_message_cta {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+.contact_section iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 1em;
+  background-color: grey;
+}
+.contact_section a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  padding: em 1em;
+}
+.contact_section ul {
+  display: flex;
+}
+.contact_section a {
+  color: black;
+  font-size: 1.2em;
+  padding: 0.1em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile_menu, .mobile_menu_exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.2em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary_nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.location a {
+    color: rgb(248, 184, 47);
+    border: 3px solid rgb(248, 184, 47);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.location a:hover {
+    background: rgb(248, 184, 47);
+    color: white;
+  }
+}
+@media only screen and (min-width: 1167px) {
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .right_col li {
+    width: 100%;
+    margin-right: 8em;
+  }
+  .right_col ul {
+    padding-left: 1em;
+    text-align: center;
+  }
+  .contact_section {
+    position: relative;
+  }
+  .contact_section .container {
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .contact_right {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    width: 40%;
+    height: 100%;
+  }
+  .contact_right iframe {
+    margin-top: 2.5em;
+    height: 70%;
+    width: 70%;
+  }
+  .contact_right a {
+    position: relative;
+  }
+}/*# sourceMappingURL=film.css.map */

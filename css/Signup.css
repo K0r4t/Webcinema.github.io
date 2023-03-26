@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
+body {
+  background: #e7c997;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+.wrapper {
+  width: 330px;
+  padding: 2em 1em;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: black;
+  margin-bottom: 1.2em;
+}
+
+form input {
+  width: 80%;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: #f0eee7;
+}
+
+button {
+  font-size: 1em;
+  margin-top: 1.8em;
+  padding: 10px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 90%;
+  cursor: pointer;
+  background: rgb(254, 196, 129);
+}
+
+button:hover {
+  background: rgba(254, 196, 129, 0.877);
+}
+
+input:focus {
+  border: 1px solid gra;
+}
+
+.terms {
+  margin-top: 0.2em;
+}
+.terms input {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.terms label {
+  font-size: 0.8em;
+}
+.terms a {
+  color: rgb(254, 196, 129);
+  text-decoration: none;
+}
+
+.member {
+  font-size: 0.8em;
+  margin-top: 1.4em;
+  color: #636363;
+}
+.member a {
+  color: rgb(254, 196, 129);
+  text-decoration: none;
+}
+
+.recover {
+  text-align: right;
+  font-size: 0.7em;
+  margin: 0.3em 1.4em 0 0;
+}
+.recover a {
+  text-decoration: none;
+  font-style: italic;
+}/*# sourceMappingURL=Signup.css.map */
