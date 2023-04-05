@@ -193,6 +193,70 @@ h1{
     }
 }
 
+.buy_ticket{
+    color: blueviolet;
+    font-size: 1.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+
+    .buy_text{
+        padding-top: 1.7em;
+        .choose_when{
+            font-size: 1.4em;
+            //color: purple;
+            color: black;
+            font-style: bold;
+            text-decoration: none;
+        }
+
+        .timetable{
+
+            h1{
+                padding-top: 1em;
+                color: black;
+                font-size: .9em;
+                text-align: left;
+            }
+
+            a{
+                padding-top: 4em;
+            }
+            .day{
+                //display:inline;
+                padding-bottom: 1em;
+                
+                li{
+                    
+                    display: inline;
+                    color: white;
+                    color: rgb(248, 184, 47);
+                    border: 3px solid rgb(248, 184, 47);
+                    font-weight: bold;
+                    border-radius: 5em;
+
+                    margin-top: .5em;
+                    padding-left: .5em;
+                    padding-right: .3em;
+                    margin-right: 1em;
+                    margin-left: .1em;
+
+                    cursor: pointer;
+    
+                    &:hover{
+                        background: rgb(248, 184, 47);
+                        color: white;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
 
     .mobile_menu, .mobile_menu_exit{
@@ -258,7 +322,7 @@ h1{
         padding-bottom: 4em;
         padding-top: 2em;
 
-        width: 1080px;
+        width: 900px;
         margin: 0 auto;
     }
 
@@ -302,5 +366,12 @@ h1{
             position: relative;
         }
     }
+    .buy_ticket{
+        background-color: white;
+        border-radius: 1em;
 
+        margin-top: 5em;
+        position: absolute;
+        right: 1em;
+    }
 }
