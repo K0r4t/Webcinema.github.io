@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
+
+
+body {
+    background: #e7c997;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+
+.wrapper{
+    width: 330px;
+    padding: 2em 1em;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 1.2em;
+}
+
+form input{
+    width: 80%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #f0eee7;
+}
+
+button{
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 10px 0;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    background: rgb(254, 196, 129);
+}

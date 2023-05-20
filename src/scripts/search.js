@@ -4,7 +4,14 @@ function elementFromHtml(html){
     return template.content.firstElementChild;
 }
 
-fetch('http://localhost:5000/film/')
+const urlParams = new URLSearchParams(window.location.search);
+const searchQuery = urlParams.get('title');
+
+console.log(searchQuery);
+
+const url = "http://localhost:5000/film/byname/" + searchQuery;
+
+fetch(url)
     .then(response => response.json())
     .then(data => {
         data.forEach(element => {

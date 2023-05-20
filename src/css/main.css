@@ -18,6 +18,14 @@ body {
 .navbar nav {
   display: none;
 }
+.navbar input {
+  font-weight: bold;
+  border-radius: 3em;
+  margin-top: 0.35em;
+  padding-left: 0.5em;
+  border-color: grey;
+  font-size: 0.9em;
+}
 .navbar .container {
   display: flex;
   place-content: space-between;
